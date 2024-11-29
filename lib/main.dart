@@ -240,14 +240,56 @@ class MyApp extends StatelessWidget {
                       crossAxisCount: 3,
                       crossAxisSpacing: 2,
                       mainAxisSpacing: 2,
-                      children: List.generate(12, (index) => Container(
-                        color: Colors.grey,
-                      )),
+                      children: List.generate(
+                          12,
+                          (index) => Container(
+                                color: Colors.grey,
+                              )),
                     ),
                   ),
                 ),
                 Container(
-                  child: Text("kosom 7"),
+                  height: 60,
+                  child: Row(
+                    mainAxisAlignment: MainAxisAlignment.spaceEvenly,
+                    children: <Widget>[
+                      IconButton(
+                        icon: Icon(
+                          Icons.home_filled,
+                          size: 35,
+                        ),
+                        onPressed: () => print("home"),
+                      ),
+                      IconButton(
+                        icon: Icon(
+                          Icons.search_outlined,
+                          size: 35,
+                        ),
+                        onPressed: () => print("search"),
+                      ),
+                      IconButton(
+                        icon: Icon(
+                          Icons.movie_outlined,
+                          size: 35,
+                        ),
+                        onPressed: () => print("add box"),
+                      ),
+                      IconButton(
+                        icon: Icon(
+                          Icons.shopping_bag_outlined,
+                          size: 35,
+                        ),
+                        onPressed: () => print("account"),
+                      ),
+                      IconButton(
+                        icon: Icon(
+                          Icons.supervised_user_circle_outlined,
+                          size: 35,
+                        ),
+                        onPressed: () => print("people"),
+                      ),
+                    ],
+                  ),
                 ),
               ],
             ),
